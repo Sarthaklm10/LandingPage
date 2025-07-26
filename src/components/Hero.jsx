@@ -1,11 +1,12 @@
 import React from "react";
+import heroBg from "../assets/images/team1.jpeg";
 
 const Hero = () => {
   return (
     <section
       id="home"
       className="relative bg-cover bg-center h-[calc(100vh-80px)]"
-      style={{ backgroundImage: "url('/assets/images/hero-bg.jpg')" }}
+      style={{ backgroundImage: `url(${heroBg})` }}
     >
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="container mx-auto px-6 flex flex-col justify-center items-center text-center h-full text-white relative z-10">

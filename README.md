@@ -39,3 +39,4 @@ The landing page includes the following sections:
 ## Styling
 
 All styles are managed using Tailwind CSS. You can customize the styles by editing the tailwind.config.js file or directly modifying the class names in the components.
+

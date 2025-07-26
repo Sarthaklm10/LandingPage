@@ -1,5 +1,8 @@
 // src/components/Causes.jsx
 import React from "react";
+import causeFood from "../assets/images/team1.jpeg";
+import causeEdu from "../assets/images/team2.jpg";
+import causeTrees from "../assets/images/team3.jpg";
 
 const CauseCard = ({ img, title, description }) => (
   <div className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
@@ -14,19 +17,19 @@ const CauseCard = ({ img, title, description }) => (
 const Causes = () => {
   const causesData = [
     {
-      img: "/assets/images/cause-food.jpg",
+      img: causeFood,
       title: "Healthy Food",
       description:
         "Improving well-being by providing nutritious food to individuals and communities in need.",
     },
     {
-      img: "/assets/images/cause-edu.jpg",
+      img: causeEdu,
       title: "Primary Education",
       description:
         "Empowering children with the knowledge and skills they need for a brighter future.",
     },
     {
-      img: "/assets/images/cause-trees.jpg",
+      img: causeTrees,
       title: "Tree Plantation",
       description:
         "Fostering a greener and healthier ecosystem for future generations through community engagement.",

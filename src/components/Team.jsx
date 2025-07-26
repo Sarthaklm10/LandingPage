@@ -1,5 +1,9 @@
 // src/components/Team.jsx
 import React from "react";
+import team1 from "../assets/images/team1.jpeg";
+import team2 from "../assets/images/team2.jpg";
+import team3 from "../assets/images/team3.jpg";
+import team4 from "../assets/images/team4.jpg";
 
 const TeamMember = ({ img, name, role }) => (
   <div className="text-center">
@@ -16,22 +20,22 @@ const TeamMember = ({ img, name, role }) => (
 const Team = () => {
   const teamData = [
     {
-      img: "/assets/images/team1.jpg",
+      img: team1,
       name: "Shobha Motghare",
       role: "Secretary",
     },
     {
-      img: "/assets/images/team2.jpg",
+      img: team2,
       name: "Payal Badhe",
       role: "President",
     },
     {
-      img: "/assets/images/team3.jpg",
+      img: team3,
       name: "Bharti Shendre",
       role: "Treasurer",
     },
     {
-      img: "/assets/images/team4.jpg",
+      img: team4,
       name: "Nilima Kalambe",
       role: "Advisor",
     },
@@ -48,7 +52,7 @@ const Team = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {teamData.map((member) => (
             <TeamMember key={member.name} {...member} />
-          
+
           ))}
         </div>
       </div>

@@ -5,6 +5,7 @@ import About from "./components/AboutUs";
 import Stats from "./components/Stats";
 import Causes from "./components/Causes";
 import Team from "./components/Team";
+import Events from "./components/Events";
 import GetInvolved from "./components/GetInvolved";
 import Footer from "./components/Footer";
 
@@ -18,6 +19,7 @@ function App() {
         <Stats />
         <Causes />
         <Team />
+        <Events />
         <GetInvolved />
       </main>
       <Footer />

@@ -5,6 +5,29 @@ import team2 from "../assets/images/team2.jpg";
 import team3 from "../assets/images/team3.jpg";
 import team4 from "../assets/images/team4.jpg";
 
+const teamData = [
+  {
+    img: team1,
+    name: "Shobha Motghare",
+    role: "Secretary",
+  },
+  {
+    img: team2,
+    name: "Payal Badhe",
+    role: "President",
+  },
+  {
+    img: team3,
+    name: "Bharti Shendre",
+    role: "Treasurer",
+  },
+  {
+    img: team4,
+    name: "Nilima Kalambe",
+    role: "Advisor",
+  },
+];
+
 const TeamMember = ({ img, name, role }) => (
   <div className="text-center">
     <img
@@ -18,28 +41,6 @@ const TeamMember = ({ img, name, role }) => (
 );
 
 const Team = () => {
-  const teamData = [
-    {
-      img: team1,
-      name: "Shobha Motghare",
-      role: "Secretary",
-    },
-    {
-      img: team2,
-      name: "Payal Badhe",
-      role: "President",
-    },
-    {
-      img: team3,
-      name: "Bharti Shendre",
-      role: "Treasurer",
-    },
-    {
-      img: team4,
-      name: "Nilima Kalambe",
-      role: "Advisor",
-    },
-  ];
   return (
     <section id="team" className="py-20 bg-white">
       <div className="container mx-auto px-6">
@@ -52,7 +53,6 @@ const Team = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {teamData.map((member) => (
             <TeamMember key={member.name} {...member} />
-
           ))}
         </div>
       </div>

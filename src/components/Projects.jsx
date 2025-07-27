@@ -4,6 +4,27 @@ import projectHealth from "../assets/images/4.jpg";
 import projectWomen from "../assets/images/5.jpg";
 import projectDisaster from "../assets/images/1.jpg";
 
+const projectsData = [
+  {
+    img: projectHealth,
+    title: "Healthcare Camps",
+    description:
+      "Organizing free health check-up camps in rural areas, providing essential medical services.",
+  },
+  {
+    img: projectWomen,
+    title: "Women Empowerment",
+    description:
+      "Skill development programs for women to promote financial independence and self-reliance.",
+  },
+  {
+    img: projectDisaster,
+    title: "Disaster Relief",
+    description:
+      "Providing immediate aid and support to communities affected by natural disasters.",
+  },
+];
+
 const ProjectCard = ({ img, title, description }) => (
   <div className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
     <img src={img} alt={title} className="w-full h-48 object-cover" />
@@ -15,27 +36,6 @@ const ProjectCard = ({ img, title, description }) => (
 );
 
 const Projects = () => {
-  const projectsData = [
-    {
-      img: projectHealth,
-      title: "Healthcare Camps",
-      description:
-        "Organizing free health check-up camps in rural areas, providing essential medical services.",
-    },
-    {
-      img: projectWomen,
-      title: "Women Empowerment",
-      description:
-        "Skill development programs for women to promote financial independence and self-reliance.",
-    },
-    {
-      img: projectDisaster,
-      title: "Disaster Relief",
-      description:
-        "Providing immediate aid and support to communities affected by natural disasters.",
-    },
-  ];
-
   return (
     <section id="projects" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">

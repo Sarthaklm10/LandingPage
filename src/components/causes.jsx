@@ -4,6 +4,29 @@ import causeFood from "../assets/images/1.jpg";
 import causeEdu from "../assets/images/2.jpg";
 import causeTrees from "../assets/images/3.avif";
 
+// Data for the causes section
+const causesData = [
+  {
+    img: causeFood,
+    title: "Healthy Food",
+    description:
+      "Improving well-being by providing nutritious food to individuals and communities in need.",
+  },
+  {
+    img: causeEdu,
+    title: "Primary Education",
+    description:
+      "Empowering children with the knowledge and skills they need for a brighter future.",
+  },
+  {
+    img: causeTrees,
+    title: "Tree Plantation",
+    description:
+      "Fostering a greener and healthier ecosystem for future generations through community engagement.",
+  },
+];
+
+// Card component for displaying a single cause
 const CauseCard = ({ img, title, description }) => (
   <div className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
     <img src={img} alt={title} className="w-full h-48 object-cover" />
@@ -14,28 +37,8 @@ const CauseCard = ({ img, title, description }) => (
   </div>
 );
 
+// Main component for the causes section
 const Causes = () => {
-  const causesData = [
-    {
-      img: causeFood,
-      title: "Healthy Food",
-      description:
-        "Improving well-being by providing nutritious food to individuals and communities in need.",
-    },
-    {
-      img: causeEdu,
-      title: "Primary Education",
-      description:
-        "Empowering children with the knowledge and skills they need for a brighter future.",
-    },
-    {
-      img: causeTrees,
-      title: "Tree Plantation",
-      description:
-        "Fostering a greener and healthier ecosystem for future generations through community engagement.",
-    },
-  ];
-
   return (
     <section id="causes" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">

@@ -1,8 +1,8 @@
 // src/components/Causes.jsx
 import React from "react";
-import causeFood from "../assets/images/team1.jpeg";
-import causeEdu from "../assets/images/team2.jpg";
-import causeTrees from "../assets/images/team3.jpg";
+import causeFood from "../assets/images/1.jpg";
+import causeEdu from "../assets/images/2.jpg";
+import causeTrees from "../assets/images/3.avif";
 
 const CauseCard = ({ img, title, description }) => (
   <div className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">

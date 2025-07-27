@@ -1,8 +1,8 @@
 
 import React from "react";
-import projectHealth from "../assets/images/team2.jpg";
-import projectWomen from "../assets/images/team3.jpg";
-import projectDisaster from "../assets/images/team4.jpg";
+import projectHealth from "../assets/images/4.jpg";
+import projectWomen from "../assets/images/5.jpg";
+import projectDisaster from "../assets/images/1.jpg";
 
 const ProjectCard = ({ img, title, description }) => (
   <div className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
